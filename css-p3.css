@@ -1,0 +1,65 @@
+body{height: 100%;
+    width: 100%;}
+.container{
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    grid-template: 200px 70px 300px 300px 300px 100px / 1500px 100px 100px;
+    grid-template-areas:
+    "A A A A"
+    "B C D D"
+    "E F G H"
+    "I I I I"
+    "J J K K"
+    "L L L L"
+}
+.box1{
+    grid-area: A;
+    background-color: black;
+}
+.box2{
+    grid-area: B;
+    background-color: red;
+
+}
+.box3{
+    grid-area: C;
+    background-color: gray;
+}
+.box4{
+    grid-area: D;
+    background-color: pink;
+
+}
+.box5{
+    grid-area: E;
+    background-color: green;
+}
+.box6{
+    grid-area: F;
+    background-color: yellow;
+}
+.box7{
+    grid-area: G;
+    background-color: violet;
+}
+.box8{
+    grid-area: H;
+    background-color: turquoise;
+}
+.box9{
+    grid-area: I;
+    background-color: orange;
+}
+.box10{
+    grid-area: J;
+    background-color: lightcoral;
+}
+.box11{
+    grid-area: K;
+    background-color: slateblue;
+}
+.box12{
+    grid-area: L;
+    background-color: blue;
+}
