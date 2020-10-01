@@ -63,6 +63,10 @@ body{
 .navbar .options ul{
     margin: 0; 
 }
+.navbar .options{
+    padding-left: 50px;
+
+}
 .navbar .options ul li button{
     background-color: #fff;
     color:rgb(17,17,17);
@@ -92,8 +96,8 @@ body{
     list-style-type: none;
     text-decoration: none;
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 17px;
-    letter-spacing: 1px;
+    font-size: 15px;
+    letter-spacing: 2px;
 }
 .navbar .logo{
    
@@ -322,6 +326,7 @@ body{
     grid-area: J;
     width: 510px;
 }
+a{color: #e66e0d;}
 .box10 .about-us{
     font-size: 25px;
     color: #37393a;
@@ -347,4 +352,20 @@ body{
     background: url(alt-arka.jpg)repeat;
     background-size: 100%;
     background-position: -106 0;
+}
+.txt1{
+    color: white;
+    position: relative;
+    top: 65px;
+    left: 200px;
+    width: 900px;
+}
+.txt1 a{
+    color: white;
+    font-size: 12px;
+    text-decoration: none;
+}
+.txt1:hover a {
+
+    text-decoration: underline;
 }
