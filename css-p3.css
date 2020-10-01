@@ -1,74 +1,350 @@
+html{
+    font-family: 'Source Sans Pro', sans-serif;
+}
 body{
     height: 100%;
     width: 100%;
     margin: 0;
+    
 }
-.container{
-    font-size: 45px;
-    text-align: center;
+.container0{
     display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: 300px 300px 300px 300px ;
-    grid-gap: 10px;
-    padding: 65px;
+    grid-template-columns: 313.3333px 313.3333px 313.3333px;
+    grid-template-rows: 170px;
+    max-width: 940px;
+    grid-gap: 5px;
+    word-break: break-all;
+    padding-right: 210px;
+    padding-left: 210px;
+    margin-top: 25px;
     margin-left: auto;
     margin-right: auto;
     grid-template-areas:
-                        "B C D D"
+                        "B C D"
+}
+.container{
+    display: grid;
+    grid-template-columns: 220px 220px 220px 220px ;
+    grid-template-rows:120px 60px 220px 160px ;
+    grid-gap: 20px;
+    max-width: 940px;
+    padding-right: 210px;
+    padding-left: 210px;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-areas:
                         "I I I I"
+                        "Q Q Q Q"
                         "E F G H"
+                        "X X X X"
+}
+.container2{
+    display: grid;
+    grid-template-rows: 200px 200px;
+    grid-template-columns: 2fr 2fr 1fr 1fr;
+    padding-right: 210px;
+    max-width: 940px;
+    padding-left: 210px;
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-areas:
                         "J J K K"
+}
+.navbar{
+    background-color: white;
+    height: 80px;
+    width: 100%;
+    display: inline-block;
+    margin: 0;
+    top:0;
+    z-index: 9;
+}
+.navbar .options ul{
+    margin: 0; 
+}
+.navbar .options ul li button{
+    background-color: #fff;
+    color:rgb(17,17,17);
+    border: none;
+    position: relative;
+    top: 0;
+    height: 80px;
+    font-family: 'Source Sans Pro', sans-serif;
+    
+}
+.navbar .options ul li button.navi{
+    width: 120px;   
+    opacity: 0.5;
+}
+
+.navbar .options ul li button:hover{
+   background-color: rgb(243,243,243);
+   
+}
+.navbar .options ul li{
+        position: relative;
+        right: -60px;
+        display: inline-block;
+}
+.navbar .options ul li a{
+    color: black;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 17px;
+    letter-spacing: 1px;
+}
+.navbar .logo{
+   
+    width: 400px;
+    display: inline-block;
 }
 .box1{
     width: 100%;
     height: 500px;
-    background-color: black;
+    background: url(arka.jpg) ;
+   /* background-size: 110%;*/
+    background-position: -130 0;
+    z-index: -1;
+    text-align: center;
+    color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+    cursor: default;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 90%;
+    color: #37393a;
+    line-height: 160%;
+   
+}
+.box1 .p1{
+   
+    font-size: 40px;
+    padding-top: 120px;
+    padding-bottom: 40px;
+    margin: 0;
+    color: #ffff;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.box1 .p1-1{
+    font-size: 150%;
+    margin: 0%;
+    text-align: center;
+    font-weight: 300;
+    color: #bcbcbc;
+    text-align: center;
+    text-shadow: 0px 1px #000;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.box1 .pxline {
+    height: 1px;
+    width: 100%;
+    background-color: #fff;
+    color: #fff;
+    opacity: 0.1;
+    position: relative;
+    top: 30px;
+    z-index: 1;
+    margin-top: 60px;
+}
+.box1 .button_dark{
+    font-family: 'Source Sans Pro', sans-serif;
+    display: block;
+    width: 90px;
+    padding: 15px 30px 0 30px;
+    height: 33px;
+    text-align: center;
+    margin: auto;
+    z-index: 2;
+    position: relative;
+    color: #fff;
+    font-size: 14px;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: all 0.2s ease-in-out;
+    background-color: #d76203;
+    text-shadow: 0px -1px #a70d00;
+    border: 5px solid rgba(0, 0, 0, .4);
+    background-clip: padding-box;
+    box-shadow: inset 0px 1px 2px #c14d00;
 }
 .box2{
     grid-area: B;
-    background-color: red;
-
+    
 }
+.p2-1{
+    font-size: 22px;
+    opacity: 0.5;
+    padding: 5px;
+}
+.p2-2{
+    padding: 5px;
+    letter-spacing: 1px;
+    gap: 15px;
+    height: 71px;
+    line-height: 150%;
+    font-size: 15px;
+}
+
 .box3{
     grid-area: C;
-    background-color: gray;
 }
 .box4{
     grid-area: D;
-    background-color: pink;
 
 }
 .box5{
     grid-area: I;
-    background-color: orange;
+    background-color: rgb(31,32,36);
+    text-align: center;
+    
+}
+.box5 .p3{
+    color: rgb(195,201,208);
+    position: relative;
+    top: 36px;
+    font-size: 20px;
+    display: inline;
+}
+ .butt2{
+    height: 50px;
+    position: relative;
+    width: 170px;
+    top: 30px;
+    margin-left: 90px;
+    background-color: #e66e0d;
+}
+ .butt2 a{
+    text-decoration: none;
+    color: white;
+}
+.h2{
+    font-family: 'Source Sans Pro', sans-serif;
+    border: 0;
+    padding: 0;
+    font-size: 28.8px;    
+    width: 940px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    margin-left: 10px;
+    letter-spacing: 0.5px;
+    color: #232428;
 }
 .box6{
     grid-area: E;
-    background-color: green;
+    background: url(box1.jpg) center no-repeat;
+    background-size: 100%;
+}
+.box6 button{
+    text-align: center;
+    font-size: 20px;
+    color: #ffff;
+    background-color: rgb(230,110,13);
+    border: none;
+    opacity: 0;
+}
+.box6 button:hover{
+   opacity: 0.8;
 }
 .box7{
     grid-area: F;
-    background-color: yellow;
+    background: url(box2.jpg) center no-repeat;
+    background-size: 100%;
+}
+.box7 button{
+   
+    text-align: center;
+    font-size: 20px;
+    color: #ffff;
+    background-color: rgb(230,110,13);
+    border: none;
+    opacity: 0;
+}
+.box7 button:hover{
+    opacity: 0.8;
 }
 .box8{
     grid-area: G;
-    background-color: violet;
+    background: url(box3.jpg) center no-repeat;
+    background-size: 100%;
+}
+.box8 button{
+    text-align: center;
+    font-size: 20px;
+    color: #ffff;
+    background-color: rgb(230,110,13);
+    border: none;
+    opacity: 0;
+}
+.box8 button:hover{
+    opacity: 0.8;
 }
 .box9{
     grid-area: H;
-    background-color: turquoise;
+    background: url(box4.jpg) center no-repeat;
+    /*background-size: 100%;*/
 }
-
+.box9 button{
+   
+    text-align: center;
+    font-size: 20px;
+    color: #ffff;
+    background-color: rgb(230,110,13);
+    border: none;
+    opacity: 0;
+}
+.box9 button:hover{
+    opacity: 0.8;
+}
+.box13{
+    grid-area: X;
+}
+.box13 .p13{
+    font-family: 'Source Sans Pro', sans-serif;
+    border: 0;
+    padding: 0;
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 150%;
+    color: #323536;
+    margin: 10px 0 0 10px;
+    margin-right: 1px;
+}
+.hr{
+    width:940px;
+    margin-top: 0px;
+    margin-bottom: 80px;
+    margin-left: 300px;
+}
 .box10{
     grid-area: J;
-    background-color: lightcoral;
+    width: 510px;
+}
+.box10 .about-us{
+    font-size: 25px;
+    color: #37393a;
+    padding-left: 8px;
+}
+.box10 .about-us2{
+    padding-left: 8px;
+    
+    margin-top: 30px;
+}
+.box10 .about-us2 p{
+    line-height: 170%;
+    font-size: 14px;
+    color: #37393a;
 }
 .box11{
     grid-area: K;
-    background-color: slateblue;
+    background-color: gray;
 }
 .box12{
     width: 100%;
-    height: 300px;
-    background-color: blue;
+    height: 261px;
+    background: url(alt-arka.jpg)repeat;
+    background-size: 100%;
+    background-position: -106 0;
 }
